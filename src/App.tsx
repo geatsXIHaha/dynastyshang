@@ -34,8 +34,8 @@ function App() {
         {renderPage()}
       </main>
       <footer className="footer">
-        <p>&copy; 2025 Shang Dynasty Information Portal | 商朝信息门户</p>
-        <p>Education and Historical Documentation</p>
+        <p>&copy; AII2001 SINOGRAPHY AND ANCIENT SCRIPTS </p>
+        <p>The Historical Scroll of the Shang Dynasty | 商朝历史长卷</p>
       </footer>
     </div>
   )
