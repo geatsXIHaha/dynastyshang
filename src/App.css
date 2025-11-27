@@ -1,0 +1,86 @@
+/* Ancient Shang Dynasty Theme */
+:root {
+  --primary-bronze: #8b7355;
+  --primary-gold: #d4af37;
+  --primary-dark: #2d1810;
+  --primary-light: #f5e6d3;
+  --accent-red: #8b0000;
+  --border-color: #5c4033;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-light);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary-light);
+}
+
+.main-content {
+  flex: 1;
+  background-color: var(--primary-light);
+}
+
+.footer {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bronze) 100%);
+  color: var(--primary-light);
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 3px solid var(--primary-gold);
+  font-family: 'Georgia', serif;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  color: var(--primary-gold);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+  }
+
+  .footer p:first-child {
+    font-size: 0.85rem;
+  }
+}

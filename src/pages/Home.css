@@ -1,0 +1,70 @@
+/* Ancient Shang Dynasty Theme Colors */
+:root {
+  --primary-bronze: #8b7355;
+  --primary-gold: #d4af37;
+  --primary-dark: #2d1810;
+  --primary-light: #f5e6d3;
+  --accent-red: #8b0000;
+  --border-color: #5c4033;
+}
+
+/* Home Page Specific */
+.home-page .page-hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bronze) 50%, var(--accent-red) 100%);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--primary-light);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.home-page .page-hero h1 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  font-family: 'Georgia', serif;
+  letter-spacing: 3px;
+}
+
+.home-page .page-hero h2 {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color: var(--primary-gold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+
+.home-page .page-hero p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--primary-light);
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .home-page .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-page .page-hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .home-page .page-hero p {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-page .page-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-page .page-hero h2 {
+    font-size: 1rem;
+  }
+
+  .home-page .page-hero p {
+    font-size: 0.85rem;
+  }
+}
