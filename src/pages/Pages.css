@@ -112,6 +112,70 @@
   margin-bottom: 10px;
 }
 
+.subpoint-container {
+  margin: 20px 0;
+}
+
+.subpoint-item {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.subpoint-item > strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.subpoints {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.subpoints li {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.subpoints li strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.subpoints li p {
+  margin: 5px 0 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.nested-bullets {
+  list-style-type: circle;
+  padding-left: 30px;
+  margin: 10px 0 0 0;
+}
+
+.nested-bullets li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.subpoint-image {
+  max-width: 300px;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Timeline Styling */
 .timeline {
   position: relative;

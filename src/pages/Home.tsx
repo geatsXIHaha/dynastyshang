@@ -1,42 +1,42 @@
+import { useLanguage } from '../hooks/useLanguage'
 import './Home.css'
 
 const Home = () => {
+  const { t } = useLanguage()
+
   return (
     <div className="page home-page">
       <div className="page-hero">
-        <h1>欢迎来到商朝</h1>
-        <h2>Welcome to Shang Dynasty</h2>
-        <p>Discover the Ancient Wisdom of China's First Recorded Dynasty</p>
+        <h1>{t('home.title')}</h1>
+        <h2>{t('home.subtitle')}</h2>
+        <p>{t('home.description')}</p>
       </div>
 
       <div className="page-content">
         <section className="section">
-          <h2>About Shang Dynasty</h2>
+          <h2>{t('home.aboutTitle')}</h2>
           <p>
-            The Shang Dynasty (1600–1046 BCE) was China's first recorded dynasty,
-            marking the beginning of Chinese civilization. It was a period of remarkable
-            cultural and technological advancement, from bronze metallurgy to early
-            written language.
+            {t('home.aboutContent')}
           </p>
         </section>
 
         <section className="section">
-          <h2>Key Features</h2>
+          <h2>{t('home.keyFeaturesTitle')}</h2>
           <ul>
-            <li>Advanced Bronze Technology</li>
-            <li>Early Chinese Writing System</li>
-            <li>Rich Religious Practices</li>
-            <li>Complex Social Structure</li>
+            <li>{t('home.feature1')}</li>
+            <li>{t('home.feature2')}</li>
+            <li>{t('home.feature3')}</li>
+            <li>{t('home.feature4')}</li>
           </ul>
         </section>
 
         <section className="section">
-          <h2>Navigate Through</h2>
-          <p>Use the menu to explore different sections about the Shang Dynasty:</p>
+          <h2>{t('home.navigateTitle')}</h2>
+          <p>{t('home.navigateDesc')}</p>
           <ul>
-            <li><strong>History:</strong> Learn about the timeline and rulers</li>
-            <li><strong>Culture:</strong> Discover arts, traditions, and daily life</li>
-            <li><strong>Gallery:</strong> View artifacts and archaeological findings</li>
+            <li><strong>{t('nav.chapter1')}:</strong> {t('home.cp1Desc')}</li>
+            <li><strong>{t('nav.chapter2')}:</strong> {t('home.cp2Desc')}</li>
+            <li><strong>{t('nav.chapter2')}:</strong> {t('home.cp3Desc')}</li>
           </ul>
         </section>
       </div>

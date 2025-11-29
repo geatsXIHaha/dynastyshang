@@ -1,10 +1,13 @@
+import { useLanguage } from '../hooks/useLanguage'
 import './Pages.css'
 
 const Culture = () => {
+  const { t } = useLanguage()
+
   return (
     <div className="page">
       <div className="page-hero">
-        <h1>文化 · Culture</h1>
+        <h1>{t('cp2.title')}</h1>
       </div>
 
       <div className="page-content">

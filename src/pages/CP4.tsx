@@ -1,10 +1,13 @@
+import { useLanguage } from '../hooks/useLanguage'
 import './Pages.css'
 
 const Contact = () => {
+  const { t } = useLanguage()
+
   return (
     <div className="page">
       <div className="page-hero">
-        <h1>联系 · Contact</h1>
+        <h1>{t('cp4.title')}</h1>
       </div>
 
       <div className="page-content">

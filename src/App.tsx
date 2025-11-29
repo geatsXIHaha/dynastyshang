@@ -1,27 +1,28 @@
 import { useState } from 'react'
+import { LanguageProvider } from './context/LanguageContext'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
-import History from './pages/History'
-import Culture from './pages/Culture'
-import Gallery from './pages/Gallery'
-import Contact from './pages/Contact'
+import CP1 from './pages/CP1'
+import CP2 from './pages/CP2'
+import CP3 from './pages/CP3'
+import CP4 from './pages/CP4'
 import './App.css'
 
-function App() {
+function AppContent() {
   const [currentPage, setCurrentPage] = useState('home')
 
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
         return <Home />
-      case 'history':
-        return <History />
-      case 'culture':
-        return <Culture />
-      case 'gallery':
-        return <Gallery />
-      case 'contact':
-        return <Contact />
+      case 'chapter1':
+        return <CP1 />
+      case 'chapter2':
+        return <CP2 />
+      case 'chapter3':
+        return <CP3 />
+      case 'chapter4':
+        return <CP4 />
       default:
         return <Home />
     }
@@ -34,10 +35,18 @@ function App() {
         {renderPage()}
       </main>
       <footer className="footer">
-        <p>&copy; AII2001 SINOGRAPHY AND ANCIENT SCRIPTS </p>
+        <p>&copy; 2024 Shang Dynasty Museum</p>
         <p>The Historical Scroll of the Shang Dynasty | 商朝历史长卷</p>
       </footer>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   )
 }
 

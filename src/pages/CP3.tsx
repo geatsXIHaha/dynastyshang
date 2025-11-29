@@ -1,10 +1,13 @@
+import { useLanguage } from '../hooks/useLanguage'
 import './Pages.css'
 
 const Gallery = () => {
+  const { t } = useLanguage()
+
   return (
     <div className="page">
       <div className="page-hero">
-        <h1>艺术 · Gallery</h1>
+        <h1>{t('cp3.title')}</h1>
       </div>
 
       <div className="page-content">
