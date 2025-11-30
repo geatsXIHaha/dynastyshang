@@ -5,6 +5,10 @@ import cp1ImgChengTang from '../assets/cp1ImgChengTang.png';
 
 const History = () => {
   const { t } = useLanguage()
+  const desc3Raw = t('cp1.subpoint11_desc3')
+  // Only show desc3 if it's not the fallback key string
+  const desc3 = desc3Raw !== 'cp1.subpoint11_desc3' ? desc3Raw.trim() : ''
+
 
   return (
     <div className="page">
@@ -151,7 +155,7 @@ const History = () => {
               <ul className="nested-bullets">
                 <li>{t('cp1.subpoint11_desc1')}</li>
                 <li>{t('cp1.subpoint11_desc2')}</li>
-                <li>{t('cp1.subpoint11_desc3')}</li>
+                {desc3 !== '' ? <li>{desc3}</li> : null}
               </ul>
             </div>
           </div>
