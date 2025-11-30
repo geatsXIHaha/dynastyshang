@@ -155,7 +155,7 @@ const Gallery = () => {
               </ul>
             </div>
           </div>
-
+          <br></br>
 
           <h2>{t('cp3.subtitle3')}</h2>
           <div className="subpoint-container">

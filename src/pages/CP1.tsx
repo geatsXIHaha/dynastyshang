@@ -114,7 +114,7 @@ const History = () => {
               </ul>
             </div>
           </div>
-
+          <br></br>
 
           <h2>{t('cp1.subtitle3')}</h2>
           {t('cp1.subtitle3_desc')}
