@@ -7,7 +7,12 @@ interface NavItem {
   id: string
 }
 
-const Navigation = ({ onNavigate }: { onNavigate: (pageId: string) => void }) => {
+interface NavigationProps {
+  onNavigate: (pageId: string) => void
+  currentPage: string
+}
+
+const Navigation = ({ onNavigate, currentPage }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
   const lastScrollYRef = useRef(0)
@@ -91,7 +96,7 @@ const Navigation = ({ onNavigate }: { onNavigate: (pageId: string) => void }) =>
             {navItems.map((item) => (
               <li key={item.id} className="nav-item">
                 <button
-                  className="nav-link"
+                  className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
                   onClick={() => handleNavClick(item.id)}
                 >
                   {item.label}

@@ -30,7 +30,7 @@ function AppContent() {
 
   return (
     <div className="app">
-      <Navigation onNavigate={setCurrentPage} />
+      <Navigation onNavigate={setCurrentPage} currentPage={currentPage} />
       <main className="main-content">
         {renderPage()}
       </main>

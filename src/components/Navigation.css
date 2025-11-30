@@ -56,7 +56,7 @@
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 2rem;
   margin-left: auto;
 }
 
@@ -122,6 +122,7 @@
   display: inline-block;
   text-align: left;
   white-space: normal;
+  position: relative;
 }
 
 .nav-link:hover {
@@ -130,6 +131,15 @@
   border-left: 2px solid var(--primary-gold);
   border-right: 2px solid var(--primary-gold);
   transform: scaleY(1.1);
+}
+
+.nav-link.active {
+  color: var(--primary-gold);
+  background-color: rgba(212, 175, 55, 0.15);
+  border-left: 2px solid var(--primary-gold);
+  border-right: 2px solid var(--primary-gold);
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
 /* Hamburger Menu */
@@ -211,6 +221,14 @@
   .nav-link:hover {
     border-left: 3px solid var(--primary-gold);
     background-color: rgba(212, 175, 55, 0.15);
+  }
+
+  .nav-link.active {
+    border-left: 3px solid var(--primary-gold);
+    background-color: rgba(212, 175, 55, 0.2);
+    font-weight: 700;
+    color: var(--primary-gold);
+    box-shadow: inset 3px 0 0 var(--primary-gold);
   }
 }
 

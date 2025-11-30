@@ -1,0 +1,249 @@
+/* Image Viewer Styling */
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 350px;
+}
+
+/* Size Variants */
+.image-wrapper.image-small {
+  max-width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.image-wrapper.image-medium {
+  max-width: 350px;
+}
+
+.image-wrapper.image-large {
+  max-width: 600px;
+}
+
+.subpoint-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-wrapper.image-small .subpoint-image {
+  height: 70px;     /* Adjust as you like */
+  width: auto;
+  object-fit: contain;
+}
+
+.image-wrapper.image-large .subpoint-image {
+  max-width: 600px;
+}
+
+.subpoint-image:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+/* Magnifier Button - positioned outside bottom right */
+.magnifier-btn {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(212, 175, 55, 0.9);
+  border: 2px solid var(--primary-gold);
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-wrapper:hover .magnifier-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Always show magnifier for images with magnifier-always-visible class */
+.image-wrapper.magnifier-always-visible .magnifier-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.magnifier-btn:hover {
+  background-color: var(--primary-gold);
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.5);
+}
+
+.magnifier-btn:active {
+  transform: scale(0.95);
+}
+
+/* Modal Styling */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 95vw;
+  max-height: 95vh;
+  display: inline-block;
+}
+
+.modal-image {
+  max-width: 95vw;
+  max-height: 95vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease;
+  object-fit: contain;
+  
+}
+
+.modal-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.close-btn {
+  position: fixed;       /* fixed relative to viewport */
+  top: 70px;             /* distance from top of screen */
+  right: 70px;           /* distance from right of screen */
+  z-index: 2000; 
+  background: rgba(212, 175, 55, 0.8);
+  border: 2px solid var(--primary-gold);
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  background: var(--primary-gold);
+  transform: scale(1.15);
+}
+
+.close-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    max-width: 300px;
+  }
+
+  .subpoint-image {
+    max-width: 300px;
+  }
+
+  .magnifier-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    bottom: -12px;
+    right: -12px;
+    border-width: 2px;
+  }
+
+  .modal-image {
+    max-height: 85vh;
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-wrapper {
+    max-width: 250px;
+  }
+
+  .subpoint-image {
+    max-width: 250px;
+  }
+
+  .magnifier-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    bottom: -10px;
+    right: -10px;
+    border-width: 2px;
+  }
+
+  .modal-image {
+    max-height: 80vh;
+  }
+
+  .close-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    top: 8px;
+    right: 8px;
+  }
+}

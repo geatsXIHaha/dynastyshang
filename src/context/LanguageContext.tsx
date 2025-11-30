@@ -152,6 +152,7 @@ const translations = {
     },
     cp2: {
       title: '王係谱&年表',
+      subtitle1: '商朝王系表',
     },
     cp3: {
       title: '都城迁徒',
@@ -332,6 +333,7 @@ const translations = {
     },
     cp2: {
       title: 'Shang Dynasty Culture',
+      subtitle1: 'Shang Dynasty King List',
     },
     cp3: {
       title: 'Relocations of Capitals',
