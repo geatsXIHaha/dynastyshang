@@ -1,5 +1,7 @@
 import { useLanguage } from '../hooks/useLanguage'
 import './Pages.css'
+import cp1ImgXiaJie from '../assets/cp1ImgXiaJie.png';
+import cp1ImgChengTang from '../assets/cp1ImgChengTang.png';
 
 const History = () => {
   const { t } = useLanguage()
@@ -27,7 +29,7 @@ const History = () => {
             
             <div className="subpoint-item">
               <strong>{t('cp1.subpoint2_title')}</strong>
-              <img src="/src/assets/cp1ImgXiaJie.png" alt="Xia Jie" className="subpoint-image" />
+              <img src={cp1ImgXiaJie} alt="Xia Jie" className="subpoint-image" />
               <ul className="nested-bullets">
                 <li>{t('cp1.subpoint2_desc1')}</li>
                 <li>{t('cp1.subpoint2_desc2')}</li>
@@ -50,7 +52,7 @@ const History = () => {
           <div className="subpoint-container">
             <div className="subpoint-item">
               <strong>{t('cp1.subpoint3_title')}</strong>
-              <img src="/src/assets/cp1ImgChengTang.png" alt="Xia Jie" className="subpoint-image" />
+              <img src={cp1ImgChengTang} alt="Cheng Tang" className="subpoint-image" />
               <b>{t('cp1.subpoint3_desc2')}</b>
               <ul className="nested-bullets">
                 <li>{t('cp1.subpoint3_desc3')}</li>
