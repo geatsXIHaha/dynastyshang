@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useLanguage } from '../hooks/useLanguage'
 import { useState } from 'react'
 import './Pages.css'
