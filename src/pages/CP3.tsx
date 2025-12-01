@@ -12,7 +12,7 @@ const Gallery = () => {
   const desc2 = desc2Raw !== 'cp3.subpoint6_desc5' ? desc2Raw.trim() : ''
 
   return (
-    <div className="page">
+    <div className="page cp3-page">
       <div className="page-hero">
         <h1>{t('cp3.title')}</h1>
         <b>{t('cp3.cp3_desc')}</b>

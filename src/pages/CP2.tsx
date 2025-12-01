@@ -57,7 +57,7 @@ const Culture = () => {
   const { t } = useLanguage()
 
   return (
-    <div className="page">
+    <div className="page cp2-page">
       <div className="page-hero">
         <h1>{t('cp2.title')}</h1>
       </div>
@@ -72,27 +72,27 @@ const Culture = () => {
             </div>
           </div>
           <br></br>
-          <h2>商王——商朝帝王列表</h2>
-          <h3>商朝的世系年代无定说, 前后相传17世31王, 延续600年左右</h3>
+          <h2>{t('cp2.subtitle2')}</h2>
+          <h3>{t('cp2.desc2')}</h3>
 
           <div className="table-container">
             <table className="shang-kings-table">
               <thead>
                 <tr>
-                  <th>次序</th>
-                  <th>日名1<br></br>（祭名）</th>
-                  <th>日名2<br></br>（祭名）</th>
-                  <th>庙号</th>
-                  <th>名</th>
-                  <th>备注</th>
-                  <th>年代<br></br>（公元前）</th>
-                  <th>年数</th>
+                  <th>{t('cp2.tableheader1')}</th>
+                  <th>{t('cp2.tableheader2')}</th>
+                  <th>{t('cp2.tableheader3')}</th>
+                  <th>{t('cp2.tableheader4')}</th>
+                  <th>{t('cp2.tableheader5')}</th>
+                  <th>{t('cp2.tableheader6')}</th>
+                  <th>{t('cp2.tableheader7')}</th>
+                  <th>{t('cp2.tableheader8')}</th>
                 </tr>
               </thead>
               <tbody>
                 {/* Row 2 - Full merge */}
                 <tr>
-                  <td colSpan={8} className="section-header">商前期<br></br>汤→盘庚（迁殷前）</td>
+                  <td colSpan={8} className="section-header"><b>{t('cp2.tabledesc1')}<br></br>{t('cp2.tabledesc2')}</b></td>
                 </tr>
                 {/* Rows 3-21 - Columns 7-8 merge */}
                 <tr>
@@ -783,7 +783,7 @@ const Culture = () => {
                 </tr>
                 {/* Row 22 - Full merge */}
                 <tr>
-                  <td colSpan={8} className="section-header">商后期 盘庚（迁殷后）</td>
+                  <td colSpan={8} className="section-header"><b>{t('cp2.tabledesc3')}<br></br>{t('cp2.tabledesc4')}</b></td>
                 </tr>
                 {/* Rows 23-26 - Columns 7-8 merge */}
                 <tr>

@@ -11,7 +11,7 @@ const History = () => {
 
 
   return (
-    <div className="page">
+    <div className="page cp1-page">
       <div className="page-hero">
         <h1>{t('cp1.title')}</h1>
       </div>
@@ -51,7 +51,7 @@ const History = () => {
           </div>
           <br></br>
           <h2>{t('cp1.subtitle2')}</h2>
-          {t('cp1.subpoint3_desc1')}
+          <h4>{t('cp1.subpoint3_desc1')}</h4>
           
           <div className="subpoint-container">
             <div className="subpoint-item">
@@ -117,7 +117,7 @@ const History = () => {
           <br></br>
 
           <h2>{t('cp1.subtitle3')}</h2>
-          {t('cp1.subtitle3_desc')}
+          <h4>{t('cp1.subtitle3_desc')}</h4>
           
           <div className="subpoint-container">
             <div className="subpoint-item">

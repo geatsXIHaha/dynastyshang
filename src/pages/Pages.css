@@ -83,6 +83,8 @@
   border-bottom: 2px solid var(--primary-bronze);
   font-family: 'Georgia', serif;
   position: relative;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .section h2::before {
@@ -124,7 +126,7 @@
 .subpoint-item > strong {
   color: var(--primary-dark);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   display: block;
   margin-bottom: 10px;
 }
@@ -138,7 +140,7 @@
 .subpoints li {
   margin-bottom: 15px;
   color: #333;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.7;
 }
 
@@ -164,7 +166,7 @@
 .nested-bullets li {
   margin-bottom: 8px;
   color: #555;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -176,6 +178,14 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+}
+
+.inline-image {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  display: inline;
+  margin: 0 2px;
 }
 
 .core-region-map {
@@ -536,6 +546,11 @@
   width: 50%;
 }
 
+.cp3-table tbody {
+  display: table-row-group;
+  background-color: white;
+}
+
 .cp3-table tbody tr:nth-child(odd) {
   background-color: rgba(212, 175, 55, 0.05);
 }
@@ -549,32 +564,115 @@
   border-bottom: 2px solid var(--primary-gold);
 }
 
+/* CP4 Table Container */
+.cp4-table-container {
+  margin: 30px auto;
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* CP4 Table Styling */
+.cp4-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.cp4-table thead {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bronze) 100%);
+}
+
+.cp4-table th {
+  padding: 15px;
+  text-align: center;
+  color: var(--primary-light);
+  border: 2px solid var(--primary-gold);
+  font-weight: 600;
+}
+
+.cp4-table td {
+  padding: 20px 25px;
+  border: 1px solid var(--border-color);
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  width: 50%;
+  vertical-align: top;
+}
+
+.cp4-table tbody tr:nth-child(odd) {
+  background-color: rgba(212, 175, 55, 0.05);
+}
+
+.cp4-table tbody tr:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.cp4-table tbody tr:last-child td {
+  border-bottom: 2px solid var(--primary-gold);
+}
+
+/* CP1, CP2, CP3, CP4 Pages - All h2 subtitles with 65% of entire screen width max, wrapping enabled */
+.cp1-page .section h2,
+.cp2-page .section h2,
+.cp3-page .section h2,
+.cp4-page .section h2 {
+  max-width: 65vw;
+  white-space: normal;
+  position: relative;
+  left: 50%;
+  margin-left: -32.5vw;
+}
+
 /* Shang Kings Table Styling */
 .table-container {
   margin: 30px 0;
-  overflow-x: auto;
+  overflow: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 700px;
 }
 
 .shang-kings-table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--primary-light);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 .shang-kings-table thead {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bronze) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.shang-kings-table thead {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bronze) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .shang-kings-table thead th {
   color: var(--primary-gold);
-  padding: 12px 10px;
+  padding: 23px 15px;
   text-align: center;
   font-weight: 700;
-  border: 2px solid var(--primary-gold);
-  border-right: 1px solid var(--primary-gold);
+  border: 3px solid var(--primary-gold);
+  border-right: 2px solid var(--primary-gold);
+  font-size: 1.05rem;
+  outline: 2px solid #FFD699;
+  outline-offset: -2px;
 }
 
 .shang-kings-table thead th:last-child {
@@ -582,7 +680,7 @@
 }
 
 .shang-kings-table tbody td {
-  padding: 12px 10px;
+  padding: 16px 12px;
   border: 1px solid var(--primary-bronze);
   text-align: center;
   color: #333;
