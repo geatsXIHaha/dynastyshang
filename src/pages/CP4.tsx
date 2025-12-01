@@ -168,25 +168,25 @@ const Contact = () => {
                       辛巳卜，争，贞今早 <img src={img100} alt="Xia Jie" className="inline-image" /> 王共人，呼妇好伐土方，受有佑。五月。<br></br><span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》6412/1）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img2} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img2} height="150px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img5} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img5} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
                       此辞"呼妇好伐土方"，说明<span style={{color: 'red'}}>此次征伐土方是在妇好生前，即武丁中期</span>。而伐<img src={img100} alt="Xia Jie" className="inline-image" />方的统帅中没有妇好，且卜辞又云"<img src={img3} alt="Xia Jie" className="inline-image" /><img src={img100} alt="Xia Jie" className="inline-image" />方于好 "<span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集6153》）</span>，表明伐<img src={img100} alt="Xia Jie" className="inline-image" />方时妇好已死。<span style={{color: 'red'}}><img src={img100} alt="Xia Jie" className="inline-image" />方与殷王朝之间的战争始于妇好死后，即武丁后期。</span>
                       <br/><br/>
                       <b>武丁</b><br></br>
-                      <ImageWithMaximize src={img4} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} centered={false} />
+                      <ImageWithMaximize src={img4} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} centered={false} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       <ul className="nested-bullets">
                         <li>商王小乙之子，商朝第二十二任君主。</li>
                         <li>武丁在位期间对侵扰商朝的西、北诸方国，进行了一系列战争，同时又进行了南征，为商王朝广拓了疆域，东起海滨，西到陇右，南至江汉一带，北到河北北部，奠定了华夏民族大体上的疆域。在治理内政方面，武丁从民间选拔贤才，兴利除弊，政治清明，百姓富庶，使商朝达到鼎盛，史称“武丁中兴”。</li>
                       </ul>
                       <br></br>
                       <b>妇好</b><br></br>
-                      <ImageWithMaximize src={img6} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} centered={false} />
+                      <ImageWithMaximize src={img6} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} centered={false} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       <ul className="nested-bullets">
                         <li>商王武丁的妻子，出土的大量甲骨卜辞表明，妇好多次受命征战沙场，为商王朝拓展疆土立下汗马功劳。</li>
                         <li>她还经常受命主持祭天、祭先祖、祭神泉等各类祭典，又任占卜之官。</li>
@@ -199,7 +199,7 @@ const Contact = () => {
                       辛丑卜，争，贞曰<img src={img7} alt="Xia Jie" className="inline-image" />方<img src={img8} alt="Xia Jie" className="inline-image" /><img src={img9} alt="Xia Jie" className="inline-image" />于土<br></br>……其敦<img src={img10} alt="Xia Jie" className="inline-image" />，允其敦。四月。<br></br><span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》6354正/1）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={imgMiss} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={imgMiss} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>“<img src={img9} alt="Xia Jie" className="inline-image" />”字从王献唐释作“皇”，金文中有族徽“<img src={img9} alt="Xia Jie" className="inline-image" />”，甲骨文中“<img src={img9} alt="Xia Jie" className="inline-image" />”也应为族名或国名。“<img src={img8} alt="Xia Jie" className="inline-image" />”释作同，在这里有会同、会合的意思。“<img src={img7} alt="Xia Jie" className="inline-image" />方<img src={img8} alt="Xia Jie" className="inline-image" /><img src={img9} alt="Xia Jie" className="inline-image" />于土……其敦<img src={img10} alt="Xia Jie" className="inline-image" />”的意思是，<img src={img7} alt="Xia Jie" className="inline-image" />方与皇在土方会合以敦伐<img src={img10} alt="Xia Jie" className="inline-image" />地。<img src={img7} alt="Xia Jie" className="inline-image" />方与皇能在<span style={{color: 'red'}}>土方会合，说明土方与<img src={img7} alt="Xia Jie" className="inline-image" />方是联盟。</span></td>
@@ -209,7 +209,7 @@ const Contact = () => {
                         <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》6409/1，图7—59）</span>
                         <br></br><br></br>
                         <div style={{textAlign: 'center'}}>
-                          <ImageWithMaximize src={img15} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                          <ImageWithMaximize src={img15} height="150px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                         </div>
                     </td>
                     <td>
@@ -234,7 +234,7 @@ const Contact = () => {
                       贞方围，惟帝令乍我祸。三月。<br></br><span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》39912/1）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img20} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img20} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -247,7 +247,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》39912/1）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img23} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img23} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -280,7 +280,7 @@ const Contact = () => {
 
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img26} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img26} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -304,10 +304,10 @@ const Contact = () => {
                       <br></br><br></br>
                       <div style={{display: 'flex', justifyContent: 'center', gap: '15px', alignItems: 'center', flexWrap: 'wrap', width: '100%', maxWidth: '100%', margin: '0 auto'}}>
                         <div style={{flex: '1', minWidth: '200px', maxWidth: '50%', width: '100%', textAlign: 'center'}}>
-                          <ImageWithMaximize src={img28} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                          <ImageWithMaximize src={img28} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                         </div>
                         <div style={{flex: '1', minWidth: '200px', maxWidth: '50%', width: '100%', textAlign: 'center'}}>
-                          <ImageWithMaximize src={img29} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                          <ImageWithMaximize src={img29} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                         </div>
                       </div>
                     </td>
@@ -336,7 +336,7 @@ const Contact = () => {
                   <tr>
                     <td>  
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img39} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img39} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>  
@@ -349,7 +349,7 @@ const Contact = () => {
                       贞<img src={img7} alt="Xia Jie" className="inline-image" />方弗<img src={img40} alt="Xia Jie" className="inline-image" />西土。<br></br>
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》6357/1）</span><br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img41} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img41} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>  
@@ -387,7 +387,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》28093/3）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img46} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img46} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                       <br></br>
                       廪辛康丁（即三期）时才日益崛起。<br></br>
@@ -404,7 +404,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》1038正）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img47} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img47} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -418,7 +418,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》22043）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img48} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img48} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -432,7 +432,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》584反甲）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img51} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img51} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -445,7 +445,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》525）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img53} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img53} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -458,7 +458,7 @@ const Contact = () => {
                       <span style={{fontSize: '0.9rem', fontWeight: 'bold'}}>（《合集》28053/3）</span>
                       <br></br><br></br>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img55} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img55} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -468,7 +468,7 @@ const Contact = () => {
                   <tr>
                     <td>
                       <div style={{textAlign: 'center'}}>
-                        <ImageWithMaximize src={img56} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} />
+                        <ImageWithMaximize src={img56} height="200px" alt="Xia Jie" onMaximize={setMaximizedImage} responsiveStyle={{maxWidth: '100%', maxHeight: '200px'}} />
                       </div>
                     </td>
                     <td>
@@ -572,3 +572,4 @@ const Contact = () => {
 }
 
 export default Contact
+

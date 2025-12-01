@@ -623,16 +623,27 @@
   border-bottom: 2px solid var(--primary-gold);
 }
 
-/* CP1, CP2, CP3, CP4 Pages - All h2 subtitles with 65% of entire screen width max, wrapping enabled */
+/* CP1, CP2, CP3, CP4 Pages - All h2 subtitles responsive: 70% on large screens, 90% on small screens */
 .cp1-page .section h2,
 .cp2-page .section h2,
 .cp3-page .section h2,
 .cp4-page .section h2 {
-  max-width: 65vw;
+  max-width: 70vw;
   white-space: normal;
   position: relative;
   left: 50%;
-  margin-left: -32.5vw;
+  margin-left: -35vw;
+}
+
+/* Responsive subtitles for small screens */
+@media (max-width: 768px) {
+  .cp1-page .section h2,
+  .cp2-page .section h2,
+  .cp3-page .section h2,
+  .cp4-page .section h2 {
+    max-width: 90vw;
+    margin-left: -45vw;
+  }
 }
 
 /* Shang Kings Table Styling */

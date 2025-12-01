@@ -35,7 +35,7 @@ function AppContent() {
         {renderPage()}
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Shang Dynasty Museum</p>
+        <p>AII2001 文字学</p>
         <p>The Historical Scroll of the Shang Dynasty | 商朝历史长卷</p>
       </footer>
     </div>
