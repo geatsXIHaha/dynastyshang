@@ -55,7 +55,6 @@ import img50 from '../assets/4img50.png';
 import img51 from '../assets/4img51.png';
 import img52 from '../assets/4img52.png';
 import img53 from '../assets/4img53.png';
-import img54 from '../assets/4img54.png';
 import img55 from '../assets/4img55.png';
 import img56 from '../assets/4img56.png';
 import img57 from '../assets/4img57.png';
