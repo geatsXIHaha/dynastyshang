@@ -10,33 +10,67 @@ const Home = () => {
         <h1>{t('home.title')}</h1>
         <h2>{t('home.subtitle')}</h2>
         <p>{t('home.description')}</p>
+        <p>{t('home.description2')}</p>
       </div>
 
       <div className="page-content">
         <section className="section">
-          <h2>{t('home.aboutTitle')}</h2>
+          <h2>{t('home.subtitle1')}</h2>
           <p>
-            {t('home.aboutContent')}
+            {t('home.subtitle1_desc1')}
+            <br></br><br></br>
+            {t('home.subtitle1_desc2')}
+            <br></br><br></br>
+            {t('home.subtitle1_desc3')}
           </p>
         </section>
 
         <section className="section">
-          <h2>{t('home.keyFeaturesTitle')}</h2>
+          <h2>{t('home.subtitle2')}</h2>
+          <b>{t('home.subtitle2_desc1')}</b>
           <ul>
-            <li>{t('home.feature1')}</li>
-            <li>{t('home.feature2')}</li>
-            <li>{t('home.feature3')}</li>
-            <li>{t('home.feature4')}</li>
+            <li>{t('home.subtitle2_desc2')}</li>
+          </ul>
+          <b>{t('home.subtitle2_desc3')}</b>
+          <ul>
+            <li>{t('home.subtitle2_desc4')}</li>
+          </ul>
+          <b>{t('home.subtitle2_desc5')}</b>
+          <ul>
+            <li>{t('home.subtitle2_desc6')}</li>
+          </ul>
+          <b>{t('home.subtitle2_desc7')}</b>
+          <ul>
+            <li>{t('home.subtitle2_desc8')}</li>
           </ul>
         </section>
 
         <section className="section">
-          <h2>{t('home.navigateTitle')}</h2>
-          <p>{t('home.navigateDesc')}</p>
+          <h2>{t('home.subtitle3')}</h2>
+          <p>
+            {t('home.subtitle3_desc1')}
+            <br></br><br></br>
+            {t('home.subtitle3_desc2')}
+          </p>
+        </section>
+
+        <section className="section">
+          <h2>{t('home.subtitle4')}</h2>
+          <b>{t('home.subtitle4_desc1')}</b>
           <ul>
-            <li><strong>{t('nav.chapter1')}:</strong> {t('home.cp1Desc')}</li>
-            <li><strong>{t('nav.chapter2')}:</strong> {t('home.cp2Desc')}</li>
-            <li><strong>{t('nav.chapter2')}:</strong> {t('home.cp3Desc')}</li>
+            <li>{t('home.subtitle4_desc2')}</li>
+          </ul>
+          <b>{t('home.subtitle4_desc3')}</b>
+          <ul>
+            <li>{t('home.subtitle4_desc4')}</li>
+          </ul>
+          <b>{t('home.subtitle4_desc5')}</b>
+          <ul>
+            <li>{t('home.subtitle4_desc6')}</li>
+          </ul>
+          <b>{t('home.subtitle4_desc7')}</b>
+          <ul>
+            <li>{t('home.subtitle4_desc8')}</li>
           </ul>
         </section>
       </div>
