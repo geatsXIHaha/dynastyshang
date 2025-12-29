@@ -37,7 +37,7 @@ const Gallery = () => {
                   {language === 'cn' ? (
                       <>张衡在《东京赋》中说：“殷人屡迁，前八后五”，即商朝<span style={{color: 'red'}}>从契至汤期间迁徙了八次</span>，自<span style={{color: 'red'}}>汤至盘庚期间迁徙了五次（中商阶段）。</span></>
                     ) : (
-                      t('cp3.subpoint1_desc1')
+                      t('cp3.subpoint1_desc2')
                   )}
                 </li>
                 <li>{t('cp3.subpoint1_desc3')}</li>
