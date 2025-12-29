@@ -1,6 +1,6 @@
 import { useLanguage } from '../hooks/useLanguage'
 import './Pages.css'
-import coreRegionMap from '../assets/coreRegionMap.png';
+import coreRegionMap from '../assets/coreRegionMap.jpg';
 
 const Gallery = () => {
   const { t, language } = useLanguage()
@@ -26,22 +26,23 @@ const Gallery = () => {
           <div className="subpoint-container">
             <div className="subpoint-item">
               <ul className="nested-bullets">
-                <li>{t('cp3.subpoint1_desc1')}</li>
-                {language === 'cn' && (
-                  <li><b>前八</b>：{t('cp3.subpoint1_desc2').replace('前八：', '')}</li>
-                )}
-                {language === 'cn' && (
-                  <li style={{ listStyleType: "none", paddingLeft: 0 }}>
-                    <b>后五</b>：{t('cp3.subpoint1_desc3').replace('后五：', '')}
-                  </li>
-                )}
-                {language === 'en' && (
-                  <li>{t('cp3.subpoint1_desc2')}</li>
-                )}
-                {language === 'en' && (
-                  <li>{t('cp3.subpoint1_desc3')}</li>
-                )}
-                <li>{t('cp3.subpoint1_desc4')}</li>
+                <li>
+                  {language === 'cn' ? (
+                    <><b>商朝</b>与后来的历史时期相比有一个非常<b>独特的地方</b>，就是它的<span style={{color: 'red'}}>都城屡次迁徙</span>。</>
+                  ) : (
+                    t('cp3.subpoint1_desc1')
+                  )}
+                </li>
+                <li>
+                  {language === 'cn' ? (
+                      <>张衡在《东京赋》中说：“殷人屡迁，前八后五”，即商朝<span style={{color: 'red'}}>从契至汤期间迁徙了八次</span>，自<span style={{color: 'red'}}>汤至盘庚期间迁徙了五次（中商阶段）。</span></>
+                    ) : (
+                      t('cp3.subpoint1_desc1')
+                  )}
+                </li>
+                <li>{t('cp3.subpoint1_desc3')}</li>
+                {language === 'en' ? (
+                  <li>{t('cp3.subpoint1_desc4')}</li>):null}
               </ul>
               
               <table className="cp3-table">

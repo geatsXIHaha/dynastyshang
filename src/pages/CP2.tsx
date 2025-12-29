@@ -1,7 +1,8 @@
 import { useLanguage } from '../hooks/useLanguage'
 import ImageViewer from '../components/ImageViewer'
 import './Pages.css'
-import dynastyShangWangXi from '../assets/dynastyShangWangXi.png';
+import dynastyShangWangXi from '../assets/wangxipu_chinese.jpg';
+import dynastyShangWangXiEng from '../assets/wangxipu_eng.jpg';
 import img1 from '../assets/img1.png';
 import img2 from '../assets/img2.png';
 import img3 from '../assets/img3.png';
@@ -54,7 +55,7 @@ import img49 from '../assets/img49.png';
 
 
 const Culture = () => {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   return (
     <div className="page cp2-page">
@@ -68,7 +69,7 @@ const Culture = () => {
           
           <div className="subpoint-container">
             <div className="subpoint-item">
-              <ImageViewer src={dynastyShangWangXi} alt="king" showMagnifierAlways={true} />
+              <ImageViewer src={language === 'en' ? dynastyShangWangXiEng : dynastyShangWangXi} alt="king" showMagnifierAlways={true} />
             </div>
           </div>
           <br></br>
