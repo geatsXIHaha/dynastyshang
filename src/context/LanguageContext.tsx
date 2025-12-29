@@ -275,7 +275,7 @@ const translations = {
   },
   en: {
     nav: {
-      home: 'Home',
+      home: 'HOME',
       chapter1: 'FOUNDATION OF SHANG DYNASTY',
       chapter2: 'GENEALOGY',
       chapter3: 'RELOCATION OF CAPITAL',
