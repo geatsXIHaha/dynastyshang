@@ -158,6 +158,17 @@ const History = () => {
                 {desc3 !== '' ? <li>{desc3}</li> : null}
               </ul>
             </div>
+
+            <div className="subpoint-item">
+              <strong>{t('cp1.subpoint12_title')}</strong>
+              <ul className="nested-bullets">
+                <li>{t('cp1.subpoint12_desc1')}</li>
+                <li>{t('cp1.subpoint12_desc2')}</li>
+                <li>{t('cp1.subpoint12_desc3')}</li>
+                <li>{t('cp1.subpoint12_desc4')}</li>
+                <li>{t('cp1.subpoint12_desc5')}</li>
+              </ul>
+            </div>
           </div>
           {/* <div className="timeline">
             <div className="timeline-item">

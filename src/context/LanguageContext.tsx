@@ -161,6 +161,13 @@ const translations = {
       subpoint11_desc1: '先秦文献盛传,商灭夏以后天大旱。',
       subpoint11_desc2: '成汤一面亲自向天祈祷求雨',
       subpoint11_desc3: '一面用伊尹"教民田头凿井以灌田"。推广水利技术，抗旱保收。',
+
+      subpoint12_title: '5. 都城管理',
+      subpoint12_desc1: '将商朝的都城划分为内服和外服。',
+      subpoint12_desc2: '内服居住的一般都是王族、子族和多生族（商王直辖区）',
+      subpoint12_desc3: '外服居住的都是诸侯（附属国）',
+      subpoint12_desc4: '商王会将一部分的商族移至新占领的方国，让他们与原本的居民一起生活',
+      subpoint12_desc5: '主要为了巩固政权，文化同化以及方便监督',
     
       
     },
@@ -386,6 +393,13 @@ const translations = {
       subpoint11_title: '4. Attach importance to the development of agricultural production',
       subpoint11_desc1: 'According to the literature of the Pre-Qin period, there was a severe drought after the Shang Dynasty overthrew the Xia Dynasty.',
       subpoint11_desc2: 'While Cheng Tang personally prayed to the sky for rain, he also used Yi Yin to "teach the people to dig wells at the edges of their fields to irrigate them." Promote water conservancy technology to resist drought and ensure harvests.',
+    
+      subpoint12_title: '5. Management of the capital',
+      subpoint12_desc1: 'The capital of the Shang Dynasty was divided into the inner court and the outer court.',
+      subpoint12_desc2: 'The people who resided in the inner court were generally from the royal family, the sub-royal family and the multi-descendant family (the direct jurisdiction of the king of Shang).',
+      subpoint12_desc3: 'Those who live at outer court were all feudal vassal (vassal states).',
+      subpoint12_desc4: 'The king of Shang would move some of the Shang people to the newly occupied vassal states and let them live together with the original residents.',
+      subpoint12_desc5: 'It is mainly for consolidating the political power, cultural assimilation and facilitating supervision.',
     },
     cp2: {
       title: 'Genealogy and Chronological Table of Shang Dynasty Kings',
